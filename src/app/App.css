@@ -1,0 +1,28 @@
+﻿.app h3 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  margin-bottom: var(--s-3);
+}
+
+.app p {
+  color: var(--muted);
+}
+
+.schedule-form {
+  display: grid;
+  gap: var(--s-3);
+  margin-top: var(--s-4);
+}
+
+.schedule-form label {
+  display: grid;
+  gap: var(--s-1);
+  font-size: 0.95rem;
+}
+
+.schedule-form input {
+  padding: 0.65rem 0.8rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  background: #fff;
+}

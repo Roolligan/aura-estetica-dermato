@@ -1,0 +1,22 @@
+﻿:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --text: #1c1b1a;
+  --muted: #6e6e6e;
+  --line: rgba(28, 27, 26, 0.12);
+  --accent: #c8a46a;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --r-lg: 18px;
+  --r-md: 14px;
+  --container: 1120px;
+  --s-1: 8px;
+  --s-2: 12px;
+  --s-3: 16px;
+  --s-4: 24px;
+  --s-5: 32px;
+  --s-6: 48px;
+  --s-7: 72px;
+  --s-8: 96px;
+  --font-title: "Playfair Display", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}

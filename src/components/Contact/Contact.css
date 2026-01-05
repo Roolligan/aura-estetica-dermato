@@ -1,0 +1,53 @@
+﻿.contact-grid {
+  align-items: start;
+}
+
+.contact-info {
+  display: grid;
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
+}
+
+.contact-info strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.contact-info p {
+  color: var(--muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: var(--s-3);
+}
+
+.contact-form label {
+  display: grid;
+  gap: var(--s-1);
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.7rem 0.8rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.form-success {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.map-placeholder {
+  height: 200px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  background: rgba(28, 27, 26, 0.05);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}

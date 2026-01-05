@@ -1,0 +1,39 @@
+﻿.team-grid {
+  display: grid;
+  gap: var(--s-4);
+}
+
+.team-card {
+  display: grid;
+  gap: var(--s-2);
+}
+
+.team-card h3 {
+  font-family: var(--font-title);
+}
+
+.team-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.team-card p {
+  color: var(--muted);
+}
+
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(200, 164, 106, 0.2);
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

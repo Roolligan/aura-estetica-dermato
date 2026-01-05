@@ -1,0 +1,34 @@
+﻿.footer {
+  padding: var(--s-6) 0;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  display: grid;
+  gap: var(--s-3);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .footer-inner {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .footer-nav {
+    justify-content: flex-end;
+  }
+}

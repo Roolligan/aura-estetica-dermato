@@ -1,0 +1,32 @@
+﻿.faq-list {
+  display: grid;
+  gap: var(--s-3);
+}
+
+.faq-list details {
+  background: var(--surface);
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  padding: var(--s-3);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.faq-list details[open] {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list p {
+  margin-top: var(--s-2);
+  color: var(--muted);
+}

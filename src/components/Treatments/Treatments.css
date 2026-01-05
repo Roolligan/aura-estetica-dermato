@@ -1,0 +1,71 @@
+﻿.treatments-header {
+  display: grid;
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
+}
+
+.treatments-subtitle {
+  color: var(--muted);
+}
+
+.treatments-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.treatments-grid {
+  display: grid;
+  gap: var(--s-4);
+  margin-top: var(--s-4);
+}
+
+.treatment-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  margin: var(--s-2) 0;
+}
+
+.treatment-card p {
+  color: var(--muted);
+}
+
+.treatment-category {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.treatment-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--s-3) 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.modal-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--s-3) 0;
+  color: var(--muted);
+}
+
+.modal-note {
+  margin-bottom: var(--s-3);
+  color: var(--muted);
+}
+
+@media (min-width: 768px) {
+  .treatments-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .treatments-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,21 @@
+﻿.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--text);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+  z-index: 12;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .floating-whatsapp {
+    display: none;
+  }
+}

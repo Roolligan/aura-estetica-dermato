@@ -1,0 +1,34 @@
+﻿.trust {
+  padding-top: 0;
+}
+
+.trust-grid {
+  display: grid;
+  gap: var(--s-3);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  background: var(--surface);
+  padding: var(--s-3);
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+}
+
+.trust-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(200, 164, 106, 0.16);
+  display: grid;
+  place-items: center;
+  color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .trust-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
