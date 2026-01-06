@@ -63,6 +63,7 @@
 .btn-primary {
   background: var(--text);
   color: #fff;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {

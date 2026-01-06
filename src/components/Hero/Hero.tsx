@@ -1,4 +1,5 @@
 ﻿import './Hero.css'
+import heroImage from "../../assets/hero/hero-image.png"
 
 interface HeroProps {
   onOpenSchedule: () => void
@@ -10,9 +11,9 @@ export default function Hero({ onOpenSchedule }: HeroProps) {
       <div className="container hero-inner">
         <div className="hero-content">
           <div className="wordmark hero-wordmark">
-            <span className="wordmark-title">Aura</span>
-            <span className="wordmark-line">-- ESTETICA --</span>
-            <span className="wordmark-sub">CLINICA DERMATOLOGICA</span>
+            <span className="wordmark-title"></span>
+            <span className="wordmark-line"></span>
+            <span className="wordmark-sub"></span>
           </div>
           <h1>Estetica premium com resultados naturais.</h1>
           <p>
@@ -32,7 +33,12 @@ export default function Hero({ onOpenSchedule }: HeroProps) {
             <span>Protocolos seguros</span>
           </div>
         </div>
-        <div className="hero-visual" aria-hidden="true">
+        <div
+                className="hero-visual"
+                aria-hidden="true"
+                style={{ backgroundImage: `url(${heroImage})` }}
+>
+
           <div className="hero-glow"></div>
           <div className="hero-card"></div>
           <div className="hero-lines"></div>

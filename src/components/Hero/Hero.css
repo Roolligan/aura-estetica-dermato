@@ -11,6 +11,7 @@
   font-family: var(--font-title);
   font-size: clamp(2.4rem, 1.8rem + 2.5vw, 3.6rem);
   margin-bottom: var(--s-3);
+  padding-top: 55px;
 }
 
 .hero-content p {
@@ -42,9 +43,25 @@
   position: relative;
   min-height: 320px;
   border-radius: var(--r-lg);
-  background: linear-gradient(140deg, rgba(200, 164, 106, 0.15), rgba(28, 27, 26, 0.08));
   border: 1px solid var(--line);
   overflow: hidden;
+
+  /* imagem */
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    140deg,
+    rgba(200, 164, 106, 0.18),
+    rgba(28, 27, 26, 0.10)
+  );
+  pointer-events: none;
 }
 
 .hero-glow {
@@ -58,15 +75,7 @@
   filter: blur(20px);
 }
 
-.hero-card {
-  position: absolute;
-  inset: 20% 15% auto 10%;
-  height: 55%;
-  border-radius: var(--r-lg);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: var(--shadow);
-}
+
 
 .hero-lines {
   position: absolute;

@@ -40,11 +40,25 @@ export const navItems: NavItem[] = [
 ]
 
 export const trustItems = [
-  'Profissionais habilitados',
-  'Protocolos seguros',
-  'Tecnologia de ponta',
-  'Atendimento humanizado',
+  {
+    label: "Profissionais habilitados",
+    image: "/src/assets/misc/benefit-profissionais.png",
+  },
+  {
+    label: "Protocolos seguros",
+    image: "/src/assets/misc/benefit-protocolos.png",
+  },
+  {
+    label: "Tecnologia de ponta",
+    image: "/src/assets/misc/benefit-tecnologia.png",
+  },
+  {
+    label: "Atendimento humanizado",
+    image: "/src/assets/misc/benefit-atendimento.png",
+  },
 ]
+
+
 
 export const treatments: Treatment[] = [
   {

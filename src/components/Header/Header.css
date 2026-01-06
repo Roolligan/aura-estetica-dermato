@@ -12,7 +12,20 @@
   display: flex;
   align-items: center;
   gap: var(--s-4);
-  padding: var(--s-3) 0;
+  padding: 0.75rem 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: 116px; /* 🔥 aumenta a presença da marca */
+}
+
+
+.logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+    
 }
 
 .wordmark {

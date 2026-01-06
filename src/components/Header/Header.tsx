@@ -2,6 +2,8 @@
 import { NavItem } from '../../data/mock'
 import { useState } from 'react'
 
+import logoAura from "../../assets/brand/logo-aura.png"
+
 interface HeaderProps {
   navItems: NavItem[]
   activeId: string
@@ -14,11 +16,10 @@ export default function Header({ navItems, activeId, onOpenSchedule }: HeaderPro
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="#inicio" className="wordmark" aria-label="Aura Estetica">
-          <span className="wordmark-title">Aura</span>
-          <span className="wordmark-line">-- ESTETICA --</span>
-          <span className="wordmark-sub">CLINICA DERMATOLOGICA</span>
+        <a href="#inicio" className="logo" aria-label="Aura Estética">
+            <img src={logoAura} alt="Aura Estética – Clínica Dermatológica" />
         </a>
+
         <nav className="nav" aria-label="Menu principal">
           {navItems.map((item) => (
             <a
