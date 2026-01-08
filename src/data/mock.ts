@@ -1,4 +1,12 @@
-﻿export interface NavItem {
+﻿import r1 from "../assets/results/result-1.png"
+import r2 from "../assets/results/result-2.png"
+import r3 from "../assets/results/result-3.png"
+import r4 from "../assets/results/result-4.png"
+import r5 from "../assets/results/result-5.png"
+import r6 from "../assets/results/result-6.png"
+
+
+export interface NavItem {
   id: string
   label: string
 }
@@ -26,6 +34,9 @@ export interface TeamMember {
 export interface FAQItem {
   question: string
   answer: string
+}
+export interface ResultItem {
+  image: string
 }
 
 export const navItems: NavItem[] = [
@@ -117,7 +128,25 @@ export const treatments: Treatment[] = [
     duration: '60 min',
     priceFrom: 'A partir de R$ 450',
   },
+  {
+    category: "Spa",
+    name: "Spa relaxante premium",
+    benefit: "Relaxamento profundo com técnicas terapêuticas para corpo e mente.",
+    duration: "60 min",
+    priceFrom: "A partir de R$ 280",
+  }
+
+
 ]
+export const results: ResultItem[] = [
+  { image: r1 },
+  { image: r2 },
+  { image: r3 },
+  { image: r4 },
+  { image: r5 },
+  { image: r6 },
+]
+
 
 export const testimonials: Testimonial[] = [
   {

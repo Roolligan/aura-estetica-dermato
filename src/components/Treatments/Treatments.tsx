@@ -6,7 +6,7 @@ import TreatmentModal from './TreatmentModal'
 
 const categories = ['Todos', 'Facial', 'Corporal', 'Laser', 'Spa']
 
-export default function Treatments() {
+export default function Treatments({ onOpenSchedule }: { onOpenSchedule: () => void }) {
   const [activeCategory, setActiveCategory] = useState('Todos')
   const [selected, setSelected] = useState<Treatment | null>(null)
 
@@ -45,7 +45,12 @@ export default function Treatments() {
           ))}
         </div>
       </div>
-      <TreatmentModal treatment={selected} onClose={() => setSelected(null)} />
+            <TreatmentModal
+              treatment={selected}
+              onClose={() => setSelected(null)}
+              onOpenSchedule={onOpenSchedule}
+            />
+
     </section>
   )
 }

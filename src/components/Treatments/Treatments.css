@@ -69,3 +69,27 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Botão "Quero saber mais" — destaque premium */
+.treatment-card .btn {
+  opacity: 1;
+
+  border: 2px solid var(--accent);      /* 🔥 mais espesso */
+  color: var(--accent);                 /* texto dourado */
+  background: transparent;
+
+  font-weight: 500;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+
+  transition: all 0.25s ease;
+}
+.treatment-card .btn:hover {
+  background: rgba(200, 164, 106, 0.12); /* dourado suave */
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.treatment-card .btn:active {
+  transform: translateY(1px);
+}
+

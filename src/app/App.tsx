@@ -35,7 +35,7 @@ export default function App() {
       <main>
         <Hero onOpenSchedule={openSchedule} />
         <TrustBar />
-        <Treatments />
+        <Treatments onOpenSchedule={openSchedule} />
         <Results />
         <About />
         <Testimonials />

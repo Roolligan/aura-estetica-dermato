@@ -5,9 +5,10 @@ import './Treatments.css'
 interface TreatmentModalProps {
   treatment: Treatment | null
   onClose: () => void
+  onOpenSchedule: () => void
 }
 
-export default function TreatmentModal({ treatment, onClose }: TreatmentModalProps) {
+export default function TreatmentModal({ treatment, onClose, onOpenSchedule }: TreatmentModalProps) {
   const isOpen = Boolean(treatment)
   useLockBodyScroll(isOpen)
 
@@ -29,9 +30,16 @@ export default function TreatmentModal({ treatment, onClose }: TreatmentModalPro
         <p className="modal-note">
           Atendimento individualizado mediante avaliacao dermatologica.
         </p>
-        <button className="btn btn-primary" onClick={onClose}>
-          Solicitar avaliacao
+        <button
+            className="btn btn-primary"
+            onClick={() => {
+             onClose()
+             onOpenSchedule()
+          }}
+        >
+           Solicitar avaliacao
         </button>
+
       </div>
     </div>
   )
