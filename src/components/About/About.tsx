@@ -1,4 +1,5 @@
 ﻿import './About.css'
+import aboutImage from "../../assets/about/about-image.png"
 
 export default function About() {
   return (
@@ -25,9 +26,10 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="about-visual" aria-hidden="true">
-          <div className="about-shape"></div>
+        <div className="about-visual">
+          <img src={aboutImage} alt="Sobre a Aura Estética" />
         </div>
+
       </div>
     </section>
   )
