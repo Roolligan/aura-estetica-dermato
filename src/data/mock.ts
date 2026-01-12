@@ -5,10 +5,9 @@ import r4 from "../assets/results/result-4.png"
 import r5 from "../assets/results/result-5.png"
 import r6 from "../assets/results/result-6.png"
 
-import helena from '../assets/team/helena.png'
-import lucas from '../assets/team/lucas.png'
-import camila from '../assets/team/camila.png'
-
+import helenaImg from "../assets/team/helena.png"
+import lucasImg from "../assets/team/lucas.png"
+import camilaImg from "../assets/team/camila.png"
 
 
 export interface NavItem {
@@ -187,19 +186,19 @@ export const team: TeamMember[] = [
     name: 'Dra. Helena Araujo',
     role: 'Dermatologista',
     bio: 'Especialista em harmonizacao facial e protocolos combinados.',
-    image: helena
+    image: helenaImg,
   },
   {
     name: 'Dr. Lucas Vieira',
     role: 'Dermatologista',
     bio: 'Foco em tecnologias a laser e rejuvenescimento seguro.',
-    image: lucas
+    image: lucasImg,
   },
   {
     name: 'Camila Duarte',
     role: 'Esteticista',
     bio: 'Atendimento humanizado e acompanhamento pre e pos-procedimento.',
-    image:camila
+    image:camilaImg,
   },
 ]
 
