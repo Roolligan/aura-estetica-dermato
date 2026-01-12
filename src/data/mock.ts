@@ -9,6 +9,12 @@ import helenaImg from "../assets/team/helena.png"
 import lucasImg from "../assets/team/lucas.png"
 import camilaImg from "../assets/team/camila.png"
 
+import benefitProfissionais from "../assets/misc/benefit-profissionais.png"
+import benefitProtocolos from "../assets/misc/benefit-protocolos.png"
+import benefitTecnologia from "../assets/misc/benefit-tecnologia.png"
+import benefitAtendimento from "../assets/misc/benefit-atendimento.png"
+
+
 
 export interface NavItem {
   id: string
@@ -58,23 +64,21 @@ export const navItems: NavItem[] = [
 export const trustItems = [
   {
     label: "Profissionais habilitados",
-    image: "/src/assets/misc/benefit-profissionais.png",
+    image: benefitProfissionais,
   },
   {
     label: "Protocolos seguros",
-    image: "/src/assets/misc/benefit-protocolos.png",
+    image: benefitProtocolos,
   },
   {
     label: "Tecnologia de ponta",
-    image: "/src/assets/misc/benefit-tecnologia.png",
+    image: benefitTecnologia,
   },
   {
     label: "Atendimento humanizado",
-    image: "/src/assets/misc/benefit-atendimento.png",
+    image: benefitAtendimento,
   },
 ]
-
-
 
 export const treatments: Treatment[] = [
   {
