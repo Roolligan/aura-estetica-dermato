@@ -29,6 +29,7 @@ export interface TeamMember {
   name: string
   role: string
   bio: string
+  image: string
 }
 
 export interface FAQItem {
@@ -181,16 +182,19 @@ export const team: TeamMember[] = [
     name: 'Dra. Helena Araujo',
     role: 'Dermatologista',
     bio: 'Especialista em harmonizacao facial e protocolos combinados.',
+    image: '/src/assets/team/helena.png'
   },
   {
     name: 'Dr. Lucas Vieira',
     role: 'Dermatologista',
     bio: 'Foco em tecnologias a laser e rejuvenescimento seguro.',
+    image: '/src/assets/team/lucas.png'
   },
   {
     name: 'Camila Duarte',
     role: 'Esteticista',
     bio: 'Atendimento humanizado e acompanhamento pre e pos-procedimento.',
+    image:'/src/assets/team/camila.png'
   },
 ]
 

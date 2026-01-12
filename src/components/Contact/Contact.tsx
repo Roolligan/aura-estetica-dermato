@@ -32,7 +32,24 @@ export default function Contact() {
               <p>{contact.instagram}</p>
             </div>
           </div>
-          <div className="map-placeholder">Mapa</div>
+          <div className="contact-map" aria-label="Mapa da clínica">
+            <iframe
+              title="Mapa - Aura Estética"
+              src="https://www.google.com/maps?q=Av.%20Central,%201200%20-%20Jardim%20Aurora,%20Sao%20Paulo&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+           <a
+              className="map-link"
+              href="https://www.google.com/maps?q=Av.%20Central,%201200%20-%20Jardim%20Aurora,%20Sao%20Paulo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ver no Google Maps
+          </a>
+          </div>
+
         </div>
         <form
           className="contact-form"

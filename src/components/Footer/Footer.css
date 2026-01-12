@@ -21,6 +21,11 @@
   color: var(--muted);
   font-size: 0.85rem;
 }
+.footer-logo img {
+  height: 100px;           /* ajuste fino aqui */
+  width: auto;
+  display: block;
+}
 
 @media (min-width: 768px) {
   .footer-inner {
