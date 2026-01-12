@@ -5,9 +5,9 @@ import r4 from "../assets/results/result-4.png"
 import r5 from "../assets/results/result-5.png"
 import r6 from "../assets/results/result-6.png"
 
-import helena from '../assets/team/helena.jpg'
-import lucas from '../assets/team/lucas.jpg'
-import camila from '../assets/team/camila.jpg'
+import helena from '../assets/team/helena.png'
+import lucas from '../assets/team/lucas.png'
+import camila from '../assets/team/camila.png'
 
 
 
